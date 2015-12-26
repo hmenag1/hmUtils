@@ -1,6 +1,6 @@
 
 
-#' Converts a table to a data frame
+#' Converts a table to a data.frame
 #'
 #' @param xtable a table or an xtable object
 #' @param dname2ID a boolean variable indicating if the row names should be used as the index for the new table.
@@ -27,14 +27,14 @@ xtable2df <- function(xtable, dname2ID=TRUE){
 
 
 
-#' Moves a dataframe column to a new position
+#' Moves a data.frame column to a new position
 #'
-#' @param df An R dataframe
+#' @param df An R data.frame
 #' @param from an integer indicating the current position of the column to move.
 #' @param to an integer indicating the target position of the column to move.
 #'
-#' @return A dataframe identical to the input dataframe in terms of contents but with reordered columns.
-#' @details This function does not work with data tables. The default position for 'from' is the last column of the dataframe.
+#' @return A data.frame identical to the input data.frame in terms of contents but with reordered columns.
+#' @details This function does not work with data tables. The default position for 'from' is the last column of the data.frame.
 #' @export
 moveCol <- function(df, from="last", to=1){
 #Works with a data frame but not with a data.table
@@ -121,9 +121,9 @@ permIntVec.1by1 <- function(alpha, omega, cnum){
 }
 
 
-#' Saves to disc a dataframe as csv file
+#' Saves to disc a data.frame as csv file
 #'
-#' @param sfile The source file. An R dataframe, a matrix, or a vector
+#' @param sfile The source file. An R data.frame, a matrix, or a vector
 #' @param tfile The target csv file that will be saved to disc.
 #' @param wdir A boolean variable indicating if the file will be saved in the working directory or in a user-selected directory will be used.
 #' @param rnames A boolean variable indicating if row names will be saved in the csv file or not.

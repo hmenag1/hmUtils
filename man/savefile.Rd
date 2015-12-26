@@ -2,12 +2,12 @@
 % Please edit documentation in R/dataframeModifiers.R
 \name{savefile}
 \alias{savefile}
-\title{Saves to disc a dataframe as csv file}
+\title{Saves to disc a data.frame as csv file}
 \usage{
 savefile(sfile, tfile, wdir = TRUE, rnames = FALSE)
 }
 \arguments{
-\item{sfile}{The source file. An R dataframe, a matrix, or a vector}
+\item{sfile}{The source file. An R data.frame, a matrix, or a vector}
 
 \item{tfile}{The target csv file that will be saved to disc.}
 
@@ -16,6 +16,6 @@ savefile(sfile, tfile, wdir = TRUE, rnames = FALSE)
 \item{rnames}{A boolean variable indicating if row names will be saved in the csv file or not.}
 }
 \description{
-Saves to disc a dataframe as csv file
+Saves to disc a data.frame as csv file
 }
 

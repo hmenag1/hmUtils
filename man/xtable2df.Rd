@@ -2,7 +2,7 @@
 % Please edit documentation in R/dataframeModifiers.R
 \name{xtable2df}
 \alias{xtable2df}
-\title{Converts a table to a data frame}
+\title{Converts a table to a data.frame}
 \usage{
 xtable2df(xtable, dname2ID = TRUE)
 }
@@ -15,7 +15,7 @@ xtable2df(xtable, dname2ID = TRUE)
 an R data frame with the data from the table plus the optional ID column made with the dimnames of the table
 }
 \description{
-Converts a table to a data frame
+Converts a table to a data.frame
 }
 \details{
 If dname2ID is true the dimnames will be converted into a column that can be considered as an index column.
