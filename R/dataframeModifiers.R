@@ -1,4 +1,27 @@
 
+#' Renames one or several columns in a data.frame
+#'
+#' @param dat a data.frame containing the columns to be renamed.
+#' @param oldnames a character vector of column names to be be renamed.
+#' @param newnames a character vector of new names for the columns to be
+#'   renamed.
+#'
+#' @return the same data.frame with columns with new names.
+#' @export
+#'
+#' @details This function can be used in lieu of other functions in well know
+#'   packages such as dplyr, plyr, and data.table. The squeleton of the function
+#'   was found at:
+#'   http://stackoverflow.com/questions/21502465/replacement-for-rename-in-dplyr.
+
+rename_cols <- function(dat, oldnames, newnames) {
+  datnames <- colnames(dat)
+  datnames[which(datnames %in% oldnames)] <- newnames
+  colnames(dat) <- datnames
+  return(dat)
+}
+
+
 
 #' Converts a table to a data.frame
 #'
